@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+<head>
+    <title>Hello World, AngularJS - ViralPatel.net</title>
+    <script type="text/javascript"
+        src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script <source src="controller.js"></script>
+
+    </script>
+</head>
+<body ng-controller="FirstController">
+<input type="text" ng-model="nombre">
+<h3>
+  {{"Hello " +nombre}}
+</h3>
+<h3>Agregar comentario</h3>
+Comentario:
+<input type="text" ng-model="nuevoComentario.comentario"><br>
+Usuario:
+<input type="text" ng-model="nuevoComentario.username"><br>
+<button ng-click="agregarComentario()">Agregar Comentario</button>
+<h2>Comentarios</h2>
+<ul>
+  <li ng-repeat="comentario in comentarios">
+    {{comentario.comentario}}-<strong>{{comentario.username}}</strong>
+  </li>
+</ul>
+</body>
+</html>
+<!-- David Raygoza
+david.raygoza.ramirez@gmail.com
+-->
