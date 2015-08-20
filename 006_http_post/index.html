@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="HttpCall">
+<head>
+    <title>Http Post - Angular</title>
+    <script type="text/javascript"
+        src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script <source src="controller.js"></script>
+
+    </script>
+</head>
+<body ng-controller="controllerHttp">
+  <h3>Add Post</h3>
+  <input type="text" ng-model="newPost.title">
+  <textarea ng-model="newPost.body"></textarea>
+  <button ng-click="addPost()">Send Post</button>
+ <ul>
+   <li ng-repeat ="post in posts">
+  <h2> {{ post.title}}</h2>
+  <h3>{{ post.body}}</h3>
+   </li>
+ </ul>
+</body>
+  </html><!--
+   A example using the method post and get from $http directive
+   -->
