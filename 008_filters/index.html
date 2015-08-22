@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html ng-app="AppFilters">
+<head>
+    <title>Filters - Angular</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script source src="assets/js/controller.js"></script>
+
+
+</head>
+<body ng-controller="controllerFilter">
+  <p>Applying removeHtml filter</p>
+  {{my_html | removeHtml}}
+  <p>Applying json filter</p>
+  {{json_object|json}}
+  <p>Applying currency filters</p>
+  {{cost|currency}}<br>
+  {{cost|currency:"&euro;"}}
+</body>
+  </html><!--
+   A example using filters predetermined and created
+   E-Mail:david.raygoza.ramirez@gmail.com
+   -->
