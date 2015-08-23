@@ -1,0 +1,9 @@
+angular.module("AppyDigest",[])
+.controller("controllerApplyDigest",function($scope){
+  $scope.name="David";
+  document.getElementById("myButton").addEventListener("click",function(){
+    $scope.$apply(function(){
+      $scope.name="Israel";
+    });
+  });
+});
