@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="customDirective">
+<head>
+    <title>Http Post - Angular</title>
+    <script type="text/javascript"
+        src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script source src="assets/js/app.js"></script>
+    <link href="assets/css/style.css"  type="text/css">
+</head>
+<body ng-controller="appCtrl">
+  <ul class="no-list" ng-cloak>
+    <li ng-repeat="repo in repos " >
+      <div class="circular" back-img="{{repo.owner.avatar_url}}"></div>
+      <h1>{{repo.name}}</h1>
+    </li>
+  </ul>
+
+</body>
+</html><!--
+   A example using creating directive
+   E-Mail:david.raygoza.ramirez@gmail.com
+   -->
